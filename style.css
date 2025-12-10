@@ -319,3 +319,116 @@ transform: translateX(0%);
     background: rgba(0,0,0,0.6);
   }
 }
+/*phan 3*/
+:root {
+  --main-color: #6dbfe2;
+  --subtext: "Open Sans", sans-serif;
+}
+
+.about {
+  padding: 100px 0;
+}
+
+.about h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--main-color);
+  position: relative;
+}
+
+.about h1::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 150px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about h1::after {
+  position: absolute;
+  content: "\2665";
+  width: 40px;
+  height: 20px;
+  color: red;
+  background-color: #fff;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-content-left img {
+  width: 450px;
+}
+
+.about-content-right h2 {
+  font-size: 28px;
+  color: var(--main-color);
+  margin-bottom: 10px;
+  font-family: var(--subtext);
+}
+
+.about-content-right p {
+  font-size: 18px;
+  margin: 20px 0;
+  font-family: var(--subtext);
+}
+
+.about-content-right button {
+  height: 30px;
+  width: 100px;
+  background-color: var(--main-color);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.about-content-right button:hover {
+  background-color: tomato;
+}
+.services {
+  margin-top: 30px;
+}
+
+.services .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.service-item {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  background-color: #b6dcec;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  box-shadow: 2px 2px 10px black;
+}
+
+.service-item img {
+  width: 150px;
+  margin-bottom: 6px;
+}
+
+.service-item p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: var(--subtext);
+}
