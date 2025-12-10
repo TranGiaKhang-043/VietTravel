@@ -130,3 +130,192 @@ form button:hover {
   border: 1px solid var(--main-color);
   color: var(--main-color);
 }
+/*bat dau cai thien responsive*/
+.no-scroll {
+  overflow: hidden;
+}
+@media (max-width: 480px) {
+  .header-content {
+    width: 100%;
+    padding: 100px 20px 0 20px;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .header-top i {
+    font-size: 28px;
+    margin: 10px;
+  }
+
+  .header-top ul {
+    width: 70%;
+    padding: 120px 0 0 20px;
+  }
+
+  .header-top ul li a {
+    font-size: 18px;
+  }
+
+  .video-container {
+    height: 100vh;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header-content {
+    width: 80%;
+    padding: 120px 30px 0 30px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .header-top ul {
+    width: 250px;
+  }
+}
+.header-top ul {
+  position: fixed;
+  right: -320px; 
+  transition: right 0.3s ease, opacity 0.3s ease;
+}
+
+.header-top ul.active {
+  right: 0;
+  opacity: 1;
+}
+/* ket thuc cai thien responsive*/
+
+/* -------- NICE-PLACE -------- */
+.nice-place {
+  padding: 100px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nice-place-item {
+  width: 30%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.nice-place-item:hover .nice-place-text{
+transform: translateX(0%);
+}
+.nice-place-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.nice-place-text {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  padding: 12px;
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(255,255,255,0));
+  transform: translateX(-100%);
+  transition: all 0.8s ease;
+}
+.nice-place-text h2 {
+  color: var(--main-color);
+}
+
+.nice-place-text i {
+  color: yellow;
+}
+
+.nice-place-text p {
+  color: #fff;
+  margin: 12px 0;
+}
+
+.nice-place-text button {
+  height: 30px;
+  width: 100px;
+  background-color: var(--main-color);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.nice-place-text button:hover {
+  background-color: tomato;
+}
+
+.nice-place h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--main-color);
+  position: relative;
+}
+
+.nice-place h1::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 150px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nice-place h1::after {
+  position: absolute;
+  content: "\2665";
+  width: 40px;
+  height: 20px;
+  color: red;
+  background-color: #fff;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+/*giao dien cho dien thoai va tablet*/
+/* Tablet: 2 cột */
+@media (max-width: 1024px) {
+  .nice-place-item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile: 1 cột */
+@media (max-width: 768px) {
+  .nice-place-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .nice-place-item img {
+    height: 250px;
+    position: relative;
+  }
+
+  .nice-place-text {
+    transform: translateX(0%);
+    height: auto;
+    background: rgba(0,0,0,0.6);
+  }
+}
