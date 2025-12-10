@@ -372,3 +372,50 @@ transform: translateX(0%);
   margin-top: 10px;
   font-family: var(--subtext);
 }
+
+
+/*--------------------SIGN UP-----------------------*/
+.signup {
+  padding: 50px 0;
+}
+.signup-content {
+  background-color: #b6dcec;
+  padding: 30px 0;
+  align-items: center;
+  text-align: center;
+}
+.signup-content input {
+  height: 35px;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/*---------------CONTACT-----------------*/
+.contact {
+  padding: 50px 0;
+}
+.contact-content-item {
+  width: 50%;
+  padding: 6px 12px;
+}
+.contact-content-top input {
+  height: 35px;
+  width: 100%;
+  margin-bottom: 3px;
+}
+.contact-content-bottom {
+  padding: 6px 12px;
+  text-align: center;
+}
+.contact-content-bottom textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  background-color: #dddddd;
+}
+.contact-content-bottom button {
+  margin-top: 20px;
+}
