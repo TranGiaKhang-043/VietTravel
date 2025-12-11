@@ -646,12 +646,8 @@ transform: translateX(0%);
   }
 
   .tour-content-item {
-<<<<<<< HEAD
-    flex-direction: column;           /* bỏ zigzag trái–phải trên mobile */
-=======
-    flex-direction: column;           
->>>>>>> c16ec30fd6d03b724d40e523045d1827784cc074
-  }
+    flex-direction: column;          
+ }
 
   .tour-content-item-img,
   .tour-content-item-text {
@@ -694,7 +690,3 @@ transform: translateX(0%);
     text-align: center;
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> c16ec30fd6d03b724d40e523045d1827784cc074
