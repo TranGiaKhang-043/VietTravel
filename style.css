@@ -652,6 +652,7 @@ transform: translateX(0%);
   }
 
   .tour-content-item {
+    flex-direction: column;          
     flex-direction: column;
     padding: 12px;
   }
