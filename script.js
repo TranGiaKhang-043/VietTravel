@@ -54,3 +54,30 @@ closePopupEmail.addEventListener("click", function() {
   popupEmail.style.display = "none";
 });
 
+// ----------------- GỬI FORM LIÊN HỆ QUA FORMSPREE + HIỆN POPUP -----------------
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault(); // Ngăn chuyển trang
+
+    const form = e.target;
+
+    const data = {
+        name: form.querySelector('input[name="name"]').value,
+        address: form.querySelector('input[name="address"]').value,
+        email: form.querySelector('input[name="_replyto"]').value,
+        phone: form.querySelector('input[name="phone"]').value,
+        message: form.querySelector('textarea[name="message"]').value
+    };
+
+    await fetch("https://formspree.io/f/xnneonro", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+
+    document.getElementById("popupContact").style.display = "flex";
+});
+document.getElementById("closePopupContact").addEventListener("click", function () {
+    document.getElementById("popupContact").style.display = "none";
+});
