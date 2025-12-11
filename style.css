@@ -228,6 +228,44 @@ transform: translateX(0%);
   color: #fff;
   margin: 12px 0;
 }
+/* CARD trắng bao phía sau 3 hình tour nổi bật */
+.tour-card {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 18px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    width: 30%;
+    position: relative;
+}
+
+.tour-card .nice-place-item {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.tour-card .nice-place-item img {
+    border-radius: 12px;
+}
+
+.tour-card .nice-place-text {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    padding: 14px;
+    background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(255,255,255,0));
+    transform: translateX(-100%);
+    transition: all 0.8s ease;
+}
+
+.tour-card .nice-place-item:hover .nice-place-text {
+    transform: translateX(0);
+}
+
 
 /*phan 3*/
 :root {
@@ -388,10 +426,22 @@ transform: translateX(0%);
 
 .review-item {
     width: 30%;
+    background: #fff; 
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     padding: 20px 12px;
     transition: all 0.8s ease;
+    border-radius: 10px; 
+    animation: fadeUp 0.8s ease forwards; 
 }
+
+.review-item {
+    background-color: #ffffff !important;
+}
+.review-item:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 4px 6px 18px rgba(0,0,0,0.25);
+}
+
 .review-item:hover {
   box-shadow: 2px 2px 10px var(--main-color);
 }
@@ -673,4 +723,76 @@ html {
   margin-top: 6px;
   line-height: 1.6;
   color: #333;
+}
+/* them mau cho hai hoa*/
+
+#tour-noi-bat {
+  background: #E0F7F5;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#ve-chung-toi {
+  background: #FFF9F2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#services {
+  background: #E8F4FA;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#tour-xuan {
+  background: linear-gradient(135deg, #DFF7EF, #E0F7F5);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#phan-hoi {
+  background: #DCEBF9;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.signup {
+  background: #FAFAFA;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact {
+  background: #F8F8F8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* Card tour trắng nổi bật */
+.tour-content-item {
+    background: #ffffff; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.12);
+    margin-bottom: 30px;
+}
+.tour-content-item.row {
+    align-items: center;
+}
+
+.tour-content-item:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.2);
+}
+.tour-content-item {
+    display: flex;
+    align-items: center; /* căn giữa theo chiều dọc */
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.12);
+    margin-bottom: 30px;
+}
+.tour-content-item-text {
+    padding: 20px 40px;
 }
