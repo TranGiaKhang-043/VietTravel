@@ -1,423 +1,445 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/37d3d7335a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>VIETTRAVEL</title>
-  </head>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script
+        src="https://kit.fontawesome.com/37d3d7335a.js"
+        crossorigin="anonymous"
+      ></script>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <title>VIETTRAVEL</title>
+    </head>
 
 
-  <body>
-    <div>
-      <div class="header-top">
-        <i class="fa-solid fa-bars"></i>
-        <ul>
-        <li style="--x: 1"><a href="#top">Trang chủ</a></li>
-        <li style="--x: 2"><a href="#tour-noi-bat">Tour nổi bật</a></li>
-        <li style="--x: 3"><a href="#ve-chung-toi">Về chúng tôi</a></li>
-        <li style="--x: 4"><a href="#tour-xuan">Tour xuân 2026</a></li>
-        <li style="--x: 5"><a href="#phan-hoi">Phản hồi</a></li>
-        <li style="--x: 6"><a href="#lien-he">Đăng kí & Liên hệ</a></li>
-        </ul>
+    <body>
+      <div>
+        <div class="header-top">
+          <i class="fa-solid fa-bars"></i>
+          <ul>
+          <li style="--x: 1"><a href="#top">Trang chủ</a></li>
+          <li style="--x: 2"><a href="#tour-noi-bat">Tour nổi bật</a></li>
+          <li style="--x: 3"><a href="#ve-chung-toi">Về chúng tôi</a></li>
+          <li style="--x: 4"><a href="#tour-xuan">Tour xuân 2026</a></li>
+          <li style="--x: 5"><a href="#phan-hoi">Phản hồi</a></li>
+          <li style="--x: 6"><a href="#lien-he">Đăng kí & Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="video-container">
+          <video src="vid background.mp4" autoplay muted loop></video>
+        </div>
+        <div class="header-content">
+          <h1>Khám phá</h1>
+          <p>Xách ba lô lên và đi thôi nào</p>
+          <form action="">
+            <h1>Bạn muốn đi đâu Tết này</h1>
+            <p>Địa điểm</p>
+            <select name="" id="">
+              <option value="#">--Chọn địa điểm--</option>
+              <option value="#">--HÀ NỘI--</option>
+              <option value="#">--Hồ Chí Minh--</option>
+              <option value="#">--TÂY BẮC--</option>
+              <option value="#">--PHÚ QUỐC--</option>
+              <option value="#">--NHA TRANG--</option>
+              <option value="#">--ĐÀ LẠT--</option>
+              <option value="#">--QUẢNG NINH--</option>
+              <option value="#">--HUẾ--</option>
+              <option value="#">--HÀ GIANG--</option>
+              <option value="#">--Khác (chúng tôi sẽ chủ động liên hệ)--</option>
+            </select>
+            <p>Số người</p>
+            <input type="number" min="1" placeholder="Bạn đi bao nhiêu người" />
+            <p>Ngày đi</p>
+            <input type="date" />
+            <p>Ngày về</p>
+            <input type="date" />
+            <button>Tìm Kiếm</button>
+          </form>
+        </div>
       </div>
-      <div class="video-container">
-        <video src="vid background.mp4" autoplay muted loop></video>
-      </div>
-      <div class="header-content">
-        <h1>Khám phá</h1>
-        <p>Xách ba lô lên và đi thôi nào</p>
-        <form action="">
-          <h1>Bạn muốn đi đâu Tết này</h1>
-          <p>Địa điểm</p>
-          <select name="" id="">
-            <option value="#">--Chọn địa điểm--</option>
-            <option value="#">--HÀ NỘI--</option>
-            <option value="#">--Hồ Chí Minh--</option>
-            <option value="#">--TÂY BẮC--</option>
-            <option value="#">--PHÚ QUỐC--</option>
-            <option value="#">--NHA TRANG--</option>
-            <option value="#">--ĐÀ LẠT--</option>
-            <option value="#">--QUẢNG NINH--</option>
-            <option value="#">--HUẾ--</option>
-            <option value="#">--HÀ GIANG--</option>
-            <option value="#">--Khác (chúng tôi sẽ chủ động liên hệ)--</option>
-          </select>
-          <p>Số người</p>
-          <input type="number" min="1" placeholder="Bạn đi bao nhiêu người" />
-          <p>Ngày đi</p>
-          <input type="date" />
-          <p>Ngày về</p>
-          <input type="date" />
-          <button>Tìm Kiếm</button>
-        </form>
-      </div>
-    </div>
-    </header>
-<!-- NICE-PLACE -->
-<section id="tour-noi-bat" class="nice-place">
-  <div class="container">
-    <h1 class="h1-style">Tour Nổi Bật</h1>
+      </header>
+  <!-- NICE-PLACE -->
+  <section id="tour-noi-bat" class="nice-place">
+    <div class="container">
+      <h1 class="h1-style">Tour Nổi Bật</h1>
 
-    <div class="nice-place-content row">
+      <div class="nice-place-content row">
 
-      <div class="nice-place-item">
-        <div class="nice-place-img">
-          <img src="Image/anhhanoi.jpg" alt="">
+        <div class="nice-place-item">
+          <div class="nice-place-img">
+            <img src="Image/anhhanoi.jpg" alt="">
+          </div>
+
+          <div class="nice-place-text">
+            <h2>Tour Hà Nội</h2>
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+            <p>
+              Hà Nội: Thủ đô ngàn năm văn hiến. Khám phá Phố Cổ 36 nghề, thưởng thức Bún Chả trứ danh và chiêm ngưỡng vẻ đẹp cổ kính bên Hồ Gươm.
+            </p>
+
+  <button class="btn" onclick="window.location.href='Tour-hanoi.html';">
+    Mua Tour
+  </button>
+          </div>
+
         </div>
 
-        <div class="nice-place-text">
-          <h2>Tour Hà Nội</h2>
+              <div class="nice-place-item">
+          <div class="nice-place-img">
+            <img src="Image/anhhochiminh.webp" alt="">
+          </div>
 
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+          <div class="nice-place-text">
+            <h2>Tour Hồ Chí Minh</h2>
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+            <p>
+            Hồ Chí Minh: Thành phố không ngủ. Khám phá Chợ Bến Thành, Nhà thờ Đức Bà và tận hưởng nhịp sống sôi động, đa sắc màu.
+            </p>
+
+  <button class="btn" onclick="window.location.href='Tour-hcm.html';">
+    Mua Tour 
+  </button>
+            </div>
+
+        </div>
+
+              <div class="nice-place-item">
+          <div class="nice-place-img">
+            <img src="Image/anhtaybac.jpg" alt="">
+          </div>
+
+          <div class="nice-place-text">
+            <h2>Tour Tây Bắc</h2>
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+            <p>
+            Tây Bắc: Ruộng bậc thang kỳ vĩ. Chinh phục Sapa huyền ảo, khám phá văn hóa bản địa và chiêm ngưỡng cảnh sắc núi rừng hùng vĩ.          
+            </p>
+
+  <button class="btn" onclick="window.location.href='Tour-taybac.html';">
+    Mua Tour 
+  </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ========================= ABOUT SECTION ========================= -->
+  <section id="ve-chung-toi" class="about">
+    <div class="container">
+      <h1 class="h1-style">About Us</h1>
+
+      <div class="about-content row">
+        <div class="about-content-left">
+          <img src="Image/cc.png" alt="" />
+        </div>
+
+        <div class="about-content-right">
+          <h2>Tại sao bạn nên chọn chúng tôi?</h2>
 
           <p>
-            Hà Nội: Thủ đô ngàn năm văn hiến. Khám phá Phố Cổ 36 nghề, thưởng thức Bún Chả trứ danh và chiêm ngưỡng vẻ đẹp cổ kính bên Hồ Gươm.
+            Chúng tôi không chỉ mang đến những chuyến đi, mà còn tạo ra những trải nghiệm đáng nhớ.
           </p>
-
-<button class="btn" onclick="window.location.href='Tour-hanoi.html';">
-  Mua Tour
-</button>
-        </div>
-
-      </div>
-
-            <div class="nice-place-item">
-        <div class="nice-place-img">
-          <img src="Image/anhhochiminh.webp" alt="">
-        </div>
-
-        <div class="nice-place-text">
-          <h2>Tour Hồ Chí Minh</h2>
-
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-
           <p>
-          Hồ Chí Minh: Thành phố không ngủ. Khám phá Chợ Bến Thành, Nhà thờ Đức Bà và tận hưởng nhịp sống sôi động, đa sắc màu.
+            Với mạng lưới đối tác uy tín, giá cả minh bạch và dịch vụ hỗ trợ 24/7,
+            bạn hoàn toàn yên tâm khi đặt tour cùng chúng tôi.
           </p>
-
-<button class="btn" onclick="window.location.href='Tour-hcm.html';">
-  Mua Tour 
-</button>
-          </div>
-
-      </div>
-
-            <div class="nice-place-item">
-        <div class="nice-place-img">
-          <img src="Image/anhtaybac.jpg" alt="">
-        </div>
-
-        <div class="nice-place-text">
-          <h2>Tour Tây Bắc</h2>
-
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-
           <p>
-          Tây Bắc: Ruộng bậc thang kỳ vĩ. Chinh phục Sapa huyền ảo, khám phá văn hóa bản địa và chiêm ngưỡng cảnh sắc núi rừng hùng vĩ.          
+            Từ những điểm đến nổi tiếng đến những hành trình độc đáo ít người biết,
+            chúng tôi luôn đồng hành để biến giấc mơ khám phá của bạn thành hiện thực.
           </p>
 
-<button class="btn" onclick="window.location.href='Tour-taybac.html';">
-  Mua Tour 
-</button>
         </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ========================= SERVICES SECTION ========================= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="service-item">
+        <img src="Image/ht.png" alt="hotel icon">
+        <p><b>Hỗ trợ đặt phòng</b></p>
+      </div>
+
+      <div class="service-item">
+        <img src="Image/n.jpg" alt="support icon">
+        <p><b>Dịch vụ 24/7</b></p>
+      </div>
+
+      <div class="service-item">
+        <img src="Image/s.jpg" alt="guide book icon">
+        <p><b>Guide book kèm theo trong tour</b></p>
       </div>
 
     </div>
-  </div>
-</section>
-<!-- ========================= ABOUT SECTION ========================= -->
-<section id="ve-chung-toi" class="about">
-  <div class="container">
-    <h1 class="h1-style">About Us</h1>
+  </section>
 
-    <div class="about-content row">
-      <div class="about-content-left">
-        <img src="Image/cc.png" alt="" />
-      </div>
+  <!-- tour xuan 2026-->
+  <section id="tour-xuan" class="tour">
+    <div class="container">
+      <h1 class="h1-style">Tour Xuân 2026</h1>
+      <div class="tour-content row">
+        <div class="tour-content-item row">
+          <div class="tour-content-item-img">
+            <img src="Image/phuquoc.webp" alt="">
+          </div>
+          <div class="tour-content-item-text">
+            <h2>Phú Quốc</h2>
+            <p>Phú Quốc: Đảo Ngọc thiên đường của Việt Nam. Tận hưởng những bãi biển cát trắng mịn như Bãi Sao, lặn ngắm san hô rực rỡ và thưởng thức hải sản tươi ngon và cùng khám phá rừng nguyên sinh bạt ngàn.</p>
+  <button class="btn" onclick="window.location.href='Tour-phuquoc.html';">
+    Khám Phá
+  </button>
+          </div>
+        </div>
 
-      <div class="about-content-right">
-        <h2>Tại sao bạn nên chọn chúng tôi?</h2>
+      
+        <div class="tour-content-item row">
+          <div class="tour-content-item-img">
+            <img src="Image/nhatrang.webp" alt="">
+          </div>
+          <div class="tour-content-item-text">
+            <h2>Nha Trang</h2>
+            <p>Nha Trang: Thành phố biển với bãi cát vàng, biển xanh trong vắt. Khám phá những hòn đảo đẹp tuyệt vời, tham gia các hoạt động thể thao dưới nước sôi động và tận hưởng không khí nghỉ dưỡng tuyệt vời.</p>
+  <button class="btn" onclick="window.location.href='Tour-nhatrang.html';">
+    Khám Phá
+  </button>
+          </div>
+        </div>
 
-        <p>
-          Chúng tôi không chỉ mang đến những chuyến đi, mà còn tạo ra những trải nghiệm đáng nhớ.
-        </p>
-        <p>
-          Với mạng lưới đối tác uy tín, giá cả minh bạch và dịch vụ hỗ trợ 24/7,
-          bạn hoàn toàn yên tâm khi đặt tour cùng chúng tôi.
-        </p>
-        <p>
-          Từ những điểm đến nổi tiếng đến những hành trình độc đáo ít người biết,
-          chúng tôi luôn đồng hành để biến giấc mơ khám phá của bạn thành hiện thực.
-        </p>
+
+        <div class="tour-content-item row">
+          <div class="tour-content-item-img">
+            <img src="Image/dalat.jpg" alt="">
+          </div>
+          <div class="tour-content-item-text">
+            <h2>Đà Lạt</h2>
+            <p>Đà Lạt: Thành phố ngàn hoa và sương mù. Thưởng thức không khí se lạnh quanh năm, khám phá Hồ Xuân Hương thơ mộng và những biệt thự kiến trúc Pháp cổ điển, lãng mạn, cùng những vườn dâu tây tươi ngon.</p>
+  <button class="btn" onclick="window.location.href='Tour-dalat.html';">
+    Khám Phá
+  </button>
+          </div>
+        </div>
+
+
+        <div class="tour-content-item row">
+          <div class="tour-content-item-img">
+            <img src="Image/quangninh.jpg" alt="">
+          </div>
+          <div class="tour-content-item-text">
+            <h2>Quảng Ninh</h2>
+            <p>Quảng Ninh: Nơi sở hữu Vịnh Hạ Long – Kỳ quan Thiên nhiên Thế giới UNESCO. Trải nghiệm du thuyền giữa hàng ngàn đảo đá vôi hùng vĩ, khám phá hang động huyền bí và thưởng thức hải sản tươi ngon.</p>
+  <button class="btn" onclick="window.location.href='Tour-quangninh.html';">
+    Khám Phá
+  </button>
+          </div>
+        </div>
+
+
+        <div class="tour-content-item row">
+          <div class="tour-content-item-img">
+            <img src="Image/Hue.jpg" alt="">
+          </div>
+          <div class="tour-content-item-text">
+            <h2>Huế</h2>
+            <p>Thừa Thiên Huế: Cố đô thơ mộng, mang đậm dấu ấn lịch sử triều Nguyễn. Khám phá Đại Nội Huế uy nghiêm, những lăng tẩm cổ kính và du thuyền trên Sông Hương lãng mạn, thưởng thức ẩm thực cung đình tinh tế.</p>
+  <button class="btn" onclick="window.location.href='Tour-hue.html';">
+    Khám Phá
+  </button>
+          </div>
+        </div>
+
+
+        <div class="tour-content-item row">
+          <div class="tour-content-item-img">
+            <img src="Image/hagiang.jpg" alt="">
+          </div>
+          <div class="tour-content-item-text">
+            <h2>Hà Giang</h2>
+            <p>Hà Giang: Điểm đến thách thức với vẻ đẹp hùng vĩ của núi đá và cung đường. Chinh phục Mã Pí Lèng huyền thoại, khám phá Cao nguyên đá Đồng Văn và trải nghiệm văn hóa độc đáo của các dân tộc vùng cao.</p>
+  <button class="btn" onclick="window.location.href='Tour-hagiang.html';">
+    Khám Phá
+  </button>
+          </div>
+        </div>
+
+
+        <!--danh gia khach hang-->
+  <section id="phan-hoi" class="review">
+    <div class="container">
+      <h1 class="h1-style">Phản Hồi</h1>
+      <div class="review-content row">
+        <div class="review-item">
+          <div class="review-item-text">
+            <img src="Image/quotes.png" alt="">
+            <p><span>&ldquo;</span>Đà Lạt: Tuyệt vời cho nghỉ dưỡng! Khí hậu se lạnh, không khí trong lành giúp tôi thư giãn tuyệt đối. Vợ tôi thích những con dốc hoa lãng mạn, còn tôi thì mê món lẩu gà lá é ấm bụng. Sự bình yên và lãng mạn của Đà Lạt thực sự đáng giá.<span>&ldquo;</span></p>
+          </div>
+          <div class="review-item-img row">
+            <img src="Image/male.png" alt="">
+            <div class="review-item-img-text">
+              <h2>Trần Minh Mẫn</h2>
+            <p>Ngày 25/11/2025</p>
+            </div>
+          </div>
+        </div>
+              <div class="review-item">
+          <div class="review-item-text">
+            <img src="Image/quotes.png" alt="">
+            <p><span>&ldquo;</span>Nha Trang: Thành phố biển cực đỉnh! Biển xanh cát trắng lung linh, phù hợp để sống ảo và thư giãn. Tôi mê nhất là lặn biển ngắm san hô, siêu chill! Đồ ăn ngon, hải sản tươi rói. Một chuyến đi đầy năng lượng và rất đáng tiền! Nhất định phải quay lại!<span>&ldquo;</span></p>
+          </div>
+          <div class="review-item-img row">
+            <img src="Image/female.png" alt="">
+            <div class="review-item-img-text">
+              <h2>Ngọc Trinh</h2>
+            <p>Ngày 12/12/2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-item">
+          <div class="review-item-text">
+            <img src="Image/quotes.png" alt="">
+            <p><span>&ldquo;</span>Hà Giang: Một trải nghiệm sâu sắc và đáng nhớ. Cảnh quan hùng vĩ của Cao nguyên đá và đèo Mã Pí Lèng quả thực là kỳ quan thiên nhiên. Cảm nhận rõ ràng về sự khắc nghiệt nhưng kiên cường của người dân bản địa. Chuyến đi này không chỉ là du lịch, mà còn là liều thuốc tinh thần giúp cân bằng cuộc sống.<span>&ldquo;</span></p>
+          </div>
+          <div class="review-item-img row">
+            <img src="Image/doctor.png" alt="">
+            <div class="review-item-img-text">
+              <h2>Ngô Mộng Hùng</h2>
+            <p>Ngày 28/11/2025</p>
+            </div>
+        </div>
 
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ========================= SERVICES SECTION ========================= -->
-<section id="services" class="services">
-  <div class="container">
-
-    <div class="service-item">
-      <img src="Image/ht.png" alt="hotel icon">
-      <p><b>Hỗ trợ đặt phòng</b></p>
+      </div>
     </div>
-
-    <div class="service-item">
-      <img src="Image/n.jpg" alt="support icon">
-      <p><b>Dịch vụ 24/7</b></p>
-    </div>
-
-    <div class="service-item">
-      <img src="Image/s.jpg" alt="guide book icon">
-      <p><b>Guide book kèm theo trong tour</b></p>
-    </div>
-
-  </div>
-</section>
-
-<!-- tour xuan 2026-->
-<section id="tour-xuan" class="tour">
-  <div class="container">
-    <h1 class="h1-style">Tour Xuân 2026</h1>
-    <div class="tour-content row">
-      <div class="tour-content-item row">
-        <div class="tour-content-item-img">
-          <img src="Image/phuquoc.webp" alt="">
-        </div>
-        <div class="tour-content-item-text">
-          <h2>Phú Quốc</h2>
-          <p>Phú Quốc: Đảo Ngọc thiên đường của Việt Nam. Tận hưởng những bãi biển cát trắng mịn như Bãi Sao, lặn ngắm san hô rực rỡ và thưởng thức hải sản tươi ngon và cùng khám phá rừng nguyên sinh bạt ngàn.</p>
-<button class="btn" onclick="window.location.href='Tour-phuquoc.html';">
-  Khám Phá
-</button>
-        </div>
-      </div>
-
-    
-      <div class="tour-content-item row">
-        <div class="tour-content-item-img">
-          <img src="Image/nhatrang.webp" alt="">
-        </div>
-        <div class="tour-content-item-text">
-          <h2>Nha Trang</h2>
-          <p>Nha Trang: Thành phố biển với bãi cát vàng, biển xanh trong vắt. Khám phá những hòn đảo đẹp tuyệt vời, tham gia các hoạt động thể thao dưới nước sôi động và tận hưởng không khí nghỉ dưỡng tuyệt vời.</p>
-<button class="btn" onclick="window.location.href='Tour-nhatrang.html';">
-  Khám Phá
-</button>
-        </div>
-      </div>
-
-
-      <div class="tour-content-item row">
-        <div class="tour-content-item-img">
-          <img src="Image/dalat.jpg" alt="">
-        </div>
-        <div class="tour-content-item-text">
-          <h2>Đà Lạt</h2>
-          <p>Đà Lạt: Thành phố ngàn hoa và sương mù. Thưởng thức không khí se lạnh quanh năm, khám phá Hồ Xuân Hương thơ mộng và những biệt thự kiến trúc Pháp cổ điển, lãng mạn, cùng những vườn dâu tây tươi ngon.</p>
-<button class="btn" onclick="window.location.href='Tour-dalat.html';">
-  Khám Phá
-</button>
-        </div>
-      </div>
-
-
-      <div class="tour-content-item row">
-        <div class="tour-content-item-img">
-          <img src="Image/quangninh.jpg" alt="">
-        </div>
-        <div class="tour-content-item-text">
-          <h2>Quảng Ninh</h2>
-          <p>Quảng Ninh: Nơi sở hữu Vịnh Hạ Long – Kỳ quan Thiên nhiên Thế giới UNESCO. Trải nghiệm du thuyền giữa hàng ngàn đảo đá vôi hùng vĩ, khám phá hang động huyền bí và thưởng thức hải sản tươi ngon.</p>
-<button class="btn" onclick="window.location.href='Tour-quangninh.html';">
-  Khám Phá
-</button>
-        </div>
-      </div>
-
-
-      <div class="tour-content-item row">
-        <div class="tour-content-item-img">
-          <img src="Image/Hue.jpg" alt="">
-        </div>
-        <div class="tour-content-item-text">
-          <h2>Huế</h2>
-          <p>Thừa Thiên Huế: Cố đô thơ mộng, mang đậm dấu ấn lịch sử triều Nguyễn. Khám phá Đại Nội Huế uy nghiêm, những lăng tẩm cổ kính và du thuyền trên Sông Hương lãng mạn, thưởng thức ẩm thực cung đình tinh tế.</p>
-          <button class="btn">Khám phá</button>
-        </div>
-      </div>
-
-
-      <div class="tour-content-item row">
-        <div class="tour-content-item-img">
-          <img src="Image/hagiang.jpg" alt="">
-        </div>
-        <div class="tour-content-item-text">
-          <h2>Hà Giang</h2>
-          <p>Hà Giang: Điểm đến thách thức với vẻ đẹp hùng vĩ của núi đá và cung đường. Chinh phục Mã Pí Lèng huyền thoại, khám phá Cao nguyên đá Đồng Văn và trải nghiệm văn hóa độc đáo của các dân tộc vùng cao.</p>
-          <button class="btn">Khám phá</button>
-        </div>
-      </div>
-
-
-      <!--danh gia khach hang-->
-<section id="phan-hoi" class="review">
-  <div class="container">
-    <h1 class="h1-style">Phản Hồi</h1>
-    <div class="review-content row">
-      <div class="review-item">
-        <div class="review-item-text">
-          <img src="Image/quotes.png" alt="">
-          <p><span>&ldquo;</span>Đà Lạt: Tuyệt vời cho nghỉ dưỡng! Khí hậu se lạnh, không khí trong lành giúp tôi thư giãn tuyệt đối. Vợ tôi thích những con dốc hoa lãng mạn, còn tôi thì mê món lẩu gà lá é ấm bụng. Sự bình yên và lãng mạn của Đà Lạt thực sự đáng giá.<span>&ldquo;</span></p>
-        </div>
-        <div class="review-item-img row">
-          <img src="Image/male.png" alt="">
-          <div class="review-item-img-text">
-            <h2>Trần Minh Mẫn</h2>
-          <p>Ngày 25/11/2025</p>
-          </div>
-        </div>
-      </div>
-            <div class="review-item">
-        <div class="review-item-text">
-          <img src="Image/quotes.png" alt="">
-          <p><span>&ldquo;</span>Nha Trang: Thành phố biển cực đỉnh! Biển xanh cát trắng lung linh, phù hợp để sống ảo và thư giãn. Tôi mê nhất là lặn biển ngắm san hô, siêu chill! Đồ ăn ngon, hải sản tươi rói. Một chuyến đi đầy năng lượng và rất đáng tiền! Nhất định phải quay lại!<span>&ldquo;</span></p>
-        </div>
-        <div class="review-item-img row">
-          <img src="Image/female.png" alt="">
-          <div class="review-item-img-text">
-            <h2>Ngọc Trinh</h2>
-          <p>Ngày 12/12/2025</p>
-          </div>
-        </div>
-      </div>
-      <div class="review-item">
-        <div class="review-item-text">
-          <img src="Image/quotes.png" alt="">
-          <p><span>&ldquo;</span>Hà Giang: Một trải nghiệm sâu sắc và đáng nhớ. Cảnh quan hùng vĩ của Cao nguyên đá và đèo Mã Pí Lèng quả thực là kỳ quan thiên nhiên. Cảm nhận rõ ràng về sự khắc nghiệt nhưng kiên cường của người dân bản địa. Chuyến đi này không chỉ là du lịch, mà còn là liều thuốc tinh thần giúp cân bằng cuộc sống.<span>&ldquo;</span></p>
-        </div>
-        <div class="review-item-img row">
-          <img src="Image/doctor.png" alt="">
-          <div class="review-item-img-text">
-            <h2>Ngô Mộng Hùng</h2>
-          <p>Ngày 28/11/2025</p>
-          </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-    </div>
-  </div>
-</section>
- <!-------------------SIGN UP-------------------->
-<section id="lien-he" class="signup">
-      <h1 class="h1-style">Đăng ký</h1>
-      <div class="signup-content">
-        <input type="text" placeholder="Nhập email của bạn" />
-        <button class="btn">Gửi</button>
-      </div>
-    </section>
-
-    <!-----------------CONTACT---------------------->
-    <section class="contact">
-      <div class="container">
-        <h1 class="h1-style">Liên hệ</h1>
-        <div class="contact-content-top row">
-          <div class="contact-content-item">
-            <input type="text" placeholder="Tên" />
-          </div>
-          <div class="contact-content-item">
-            <input type="text" placeholder="Địa chỉ" />
-          </div>
-          <div class="contact-content-item">
-            <input type="text" placeholder="Email" />
-          </div>
-          <div class="contact-content-item">
-            <input type="text" placeholder="Điện thoại" />
-          </div>
-        </div>
-        <div class="contact-content-bottom">
-          <textarea placeholder="Nội dung"></textarea>
+  </section>
+  <!-------------------SIGN UP-------------------->
+  <section id="lien-he" class="signup">
+        <h1 class="h1-style">Đăng ký</h1>
+        <div class="signup-content">
+          <input type="text" placeholder="Nhập email của bạn" />
           <button class="btn">Gửi</button>
         </div>
+      </section>
+
+      <!-----------------CONTACT---------------------->
+      <section class="contact">
+        <div class="container">
+          <h1 class="h1-style">Liên hệ</h1>
+          <div class="contact-content-top row">
+            <div class="contact-content-item">
+              <input type="text" placeholder="Tên" />
+            </div>
+            <div class="contact-content-item">
+              <input type="text" placeholder="Địa chỉ" />
+            </div>
+            <div class="contact-content-item">
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="contact-content-item">
+              <input type="text" placeholder="Điện thoại" />
+            </div>
+          </div>
+          <div class="contact-content-bottom">
+            <textarea placeholder="Nội dung"></textarea>
+            <button id="sendContactBtn" class="btn">Gửi</button>
+          </div>
+        </div>
+      </section>
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+      <div class="footer-container">
+
+          <div class="footer-col">
+              <h3>VietTravel</h3>
+              <p>
+                  Mang đến những hành trình tuyệt đẹp, dịch vụ tận tâm  
+                  và trải nghiệm du lịch đáng nhớ trên khắp Việt Nam.
+              </p>
+          </div>
+
+          <div class="footer-col">
+              <h3>Liên Hệ</h3>
+              <p>Email: dulichchamco2025@gmail.com</p>
+              <p>SĐT: 0112 223 334 </p>
+              <p>Địa chỉ: 280 An Dương Vương, Phường 7, Quận 5, Thành phố Hồ Chí Minh 720000</p>
+          </div>
+
+          <div class="footer-col">
+              <h3>Mạng Xã Hội</h3>
+              <ul class="social-links">
+                  <li><a href="https://online.hcmue.edu.vn/">Facebook</a></li>
+                  <li><a href="https://online.hcmue.edu.vn/">Instagram</a></li>
+                  <li><a href="https://online.hcmue.edu.vn/">YouTube</a></li>
+                  <li><a href="https://online.hcmue.edu.vn/">TikTok</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h3>Hỗ Trợ</h3>
+              <p><a href="faq.html">Câu hỏi thường gặp</a></p>
+              <p><a href="privacy.html">Chính sách bảo mật</a></p>
+              <p><a href="terms.html">Điều khoản dịch vụ</a></p>
+          </div>
+
       </div>
-    </section>
-<!-- ===================== FOOTER ===================== -->
-<footer class="footer">
-    <div class="footer-container">
 
-        <div class="footer-col">
-            <h3>VietTravel</h3>
-            <p>
-                Mang đến những hành trình tuyệt đẹp, dịch vụ tận tâm  
-                và trải nghiệm du lịch đáng nhớ trên khắp Việt Nam.
-            </p>
-        </div>
-
-        <div class="footer-col">
-            <h3>Liên Hệ</h3>
-            <p>Email: support@viettravel.com</p>
-            <p>SĐT: 0123 456 789</p>
-            <p>Địa chỉ: 123 Đường du lịch, Quận 1, TP.HCM</p>
-        </div>
-
-        <div class="footer-col">
-            <h3>Mạng Xã Hội</h3>
-            <ul class="social-links">
-                <li><a href="https://online.hcmue.edu.vn/">Facebook</a></li>
-                <li><a href="https://online.hcmue.edu.vn/">Instagram</a></li>
-                <li><a href="https://online.hcmue.edu.vn/">YouTube</a></li>
-                <li><a href="https://online.hcmue.edu.vn/">TikTok</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Hỗ Trợ</h3>
-            <p><a href="#">Câu hỏi thường gặp</a></p>
-            <p><a href="#">Chính sách bảo mật</a></p>
-            <p><a href="#">Điều khoản dịch vụ</a></p>
-        </div>
-
+      <div class="footer-bottom">
+          <p>© 2025 VietTravel. All rights reserved.</p>
+      </div>
+  </footer>
+  <!-- POPUP THÔNG BÁO ĐẦU trang-->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Cảm ơn bạn!</h2>
+      <p>Hãy để lại thêm thông tin phía dưới và chúng tôi sẽ chủ động liên hệ với bạn.</p>
+      <p>Chúc bạn có trải nghiệm du lịch vui vẻ!</p>
+      <button id="closePopup" class="btn">Đóng</button>
     </div>
-
-    <div class="footer-bottom">
-        <p>© 2025 VietTravel. All rights reserved.</p>
-    </div>
-</footer>
-<!-- POPUP THÔNG BÁO -->
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <h2>Cảm ơn bạn!</h2>
-    <p>Hãy để lại thêm thông tin phía dưới và chúng tôi sẽ chủ động liên hệ với bạn.</p>
-    <p>Chúc bạn có trải nghiệm du lịch vui vẻ!</p>
-    <button id="closePopup" class="btn">Đóng</button>
   </div>
-</div>
+  <!-- POPUP điền email -->
+  <div id="popupEmail" class="popup">
+    <div class="popup-content">
+      <h2>Cảm ơn bạn đã đăng ký!</h2>
+      <p>Chúng tôi đã ghi nhận email của bạn.  
+        Vui lòng điền thêm thông tin phía dưới để VietTravel có thể liên hệ hỗ trợ.</p>
+          <button id="closePopupEmail" class="btn">Đóng</button>
+    </div>
+  </div>
+  <!-- POPUP LIÊN HỆ CÚNG CUỒI-->
+  <div id="popupContact" class="popup">
+    <div class="popup-content">
+      <h2>Cảm ơn bạn đã liên hệ!</h2>
+      <p>Chúng tôi đã nhận được thông tin của bạn.  
+        Đội ngũ VietTravel sẽ liên hệ trong thời gian sớm nhất.</p>
+      <button id="closePopupContact" class="btn">Đóng</button>
+    </div>
+  </div>
+      <script src="script.js"></script>
+    </body>
+  </html>
 
-    <script src="script.js"></script>
-  </body>
-</html>
 
