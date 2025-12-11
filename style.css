@@ -593,3 +593,79 @@ html {
   from { opacity: 0; transform: scale(0.8); }
   to { opacity: 1; transform: scale(1); }
 }
+/* -------------------------- Responsive -------------------------- */
+@media (max-width: 575px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .header-content {
+    width: 100%;
+    padding: 120px 16px 30px;
+  }
+
+  .nice-place {
+    padding: 50px 0;
+  }
+  .nice-place-item {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 12px;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+  .about-content-left,
+  .about-content-right {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .services .container {
+    flex-direction: column;
+  }
+  .service-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tour {
+    padding: 50px 0;
+  }
+  .tour-content-item {
+    flex-direction: column;          
+  }
+  .tour-content-item-img,
+  .tour-content-item-text {
+    width: 100%;
+    flex: 0 0 100%;
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .review {
+    padding: 50px 0;
+  }
+  .review-content {
+    flex-direction: column;
+  }
+  .review-item {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .contact-content-top {
+    flex-direction: column;
+  }
+  .contact-content-item {
+    width: 100%;
+  }
+  .signup-content input {
+    width: 80%;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
