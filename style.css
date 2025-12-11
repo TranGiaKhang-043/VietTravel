@@ -595,186 +595,99 @@ transform: translateX(0%);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* ============================================================
-   RESPONSIVE MOBILE (max-width: 575px)
-============================================================ */
+/* -------------------------- Responsive -------------------------- */
 @media (max-width: 575px) {
 
+  /* Layout chung */
   .row {
     flex-direction: column;
   }
 
-  /* HEADER */
   .header-content {
     width: 100%;
     padding: 120px 16px 30px;
   }
 
-  /* NICE-PLACE (Tour nổi bật) */
+  /* -------- NICE-PLACE -------- */
   .nice-place {
     padding: 50px 0;
   }
 
-  .tour-card,
   .nice-place-item {
-    width: 100% !important;
-    margin-bottom: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 12px;
   }
 
-  /* ABOUT */
+  /* -------- ABOUT -------- */
   .about {
     padding: 50px 0;
-  }
-
-  .about-content {
-    flex-direction: column;
   }
 
   .about-content-left,
   .about-content-right {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 12px;
   }
 
-  /* SERVICES */
+  /* -------- SERVICE -------- */
   .services .container {
     flex-direction: column;
   }
 
   .service-item {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
-  /* TOUR XUÂN 2026 */
+  /* -------- TOUR -------- */
   .tour {
     padding: 50px 0;
   }
 
   .tour-content-item {
-    flex-direction: column;          
-    flex-direction: column;
-    padding: 12px;
+    flex-direction: column;           
   }
 
   .tour-content-item-img,
   .tour-content-item-text {
     width: 100%;
-    padding: 10px;
+    flex: 0 0 100%;
     min-height: auto;
+    padding: 12px;
   }
 
-  .tour-content-item-text h2 {
-    font-size: 22px;
+  /* -------- REVIEW -------- */
+  .review {
+    padding: 50px 0;
   }
 
-  /* REVIEW */
   .review-content {
     flex-direction: column;
   }
 
   .review-item {
     width: 100%;
-    margin-bottom: 20px;
+    margin: 12px 0;
   }
 
-  /* SIGNUP */
+  /* -------- CONTACT & SIGNUP -------- */
+  .contact-content-top {
+    flex-direction: column;
+  }
+
+  .contact-content-item {
+    width: 100%;
+  }
+
   .signup-content input {
     width: 80%;
   }
 
-  /* CONTACT */
-  .contact-content-top {
-    flex-direction: column;
-  }
-
-  .contact-content-item {
-    width: 100%;
-  }
-
-  /* FOOTER */
+  /* -------- FOOTER (dự phòng thêm, cho chắc) -------- */
   .footer-container {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
-  }
-}
-
-
-/* ============================================================
-   RESPONSIVE TABLET (min-width: 576px) and (max-width: 991px)
-============================================================ */
-@media (min-width: 576px) and (max-width: 991px) {
-
-  .row {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nice-place-item,
-  .tour-card {
-    width: 45%;
-    margin-bottom: 30px;
-  }
-
-  .about-content {
-    flex-direction: column;
-  }
-
-  .about-content-left,
-  .about-content-right {
-    width: 90%;
-  }
-
-  .service-item {
-    width: 45%;
-  }
-
-  .review-item {
-    width: 45%;
-    margin-bottom: 20px;
-  }
-
-  .contact-content-top {
-    flex-wrap: wrap;
-  }
-
-  .contact-content-item {
-    width: 48%;
-  }
-
-  .tour-content-item {
-    flex-direction: column;
-  }
-
-  .tour-content-item-img,
-  .tour-content-item-text {
-    width: 100%;
-  }
-}
-
-
-/* ============================================================
-   RESPONSIVE LAPTOP NHỎ (min-width: 992px) and (max-width: 1200px)
-============================================================ */
-@media (min-width: 992px) and (max-width: 1200px) {
-
-  .container {
-    max-width: 1000px;
-  }
-
-  .nice-place-item,
-  .tour-card {
-    width: 32%;
-  }
-
-  .review-item {
-    width: 30%;
-  }
-
-  /* Điều chỉnh chữ vùng Tour */
-  .tour-content-item-text {
-    padding: 10px 20px;
   }
 }
 
