@@ -1117,7 +1117,7 @@
         font-size: 18px;
     }
 
-    /* ===== TRANG HỖ TRỢ / FAQ ===== */
+    /* ===== TRANG HỖ TRỢ  ===== */
     .faq-box {
         width: 95%;
         padding: 20px;
@@ -1129,7 +1129,7 @@
 }
 
 
-/* ====== MOBILE NHỎ (max-width: 480px) ====== */
+/* ====== MOBILE  ====== */
 @media (max-width: 480px) {
 
     .header-top i {
@@ -1204,4 +1204,17 @@
 @keyframes zaloFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-6px); }
+}
+/* Fix ảnh trang con full width trên mobile */
+@media (max-width: 768px) {
+
+  .tour-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tour-images img {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
