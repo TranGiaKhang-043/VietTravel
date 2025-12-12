@@ -1218,3 +1218,23 @@
     height: auto !important;
   }
 }
+/*them responsive cho mobile*/
+@media (max-width: 480px) {
+    h1 { font-size: 26px; }
+    h2 { font-size: 22px; }
+    p  { font-size: 15px; }
+
+    .mission-item, .team-card {
+        padding: 25px 18px;
+    }
+}
+@media (max-width: 480px) {
+    .mission-item,
+    .team-card {
+        width: 95% !important;
+        margin: 0 auto;
+    }
+}
+.header-top ul {
+    transition: transform 0.3s ease;
+}
