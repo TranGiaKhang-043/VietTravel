@@ -25,10 +25,11 @@
           <ul>
           <li style="--x: 1"><a href="#top">Trang chủ</a></li>
           <li style="--x: 2"><a href="#tour-noi-bat">Tour nổi bật</a></li>
-          <li style="--x: 3"><a href="#ve-chung-toi">Về chúng tôi</a></li>
-          <li style="--x: 4"><a href="#tour-xuan">Tour xuân 2026</a></li>
-          <li style="--x: 5"><a href="#phan-hoi">Phản hồi</a></li>
-          <li style="--x: 6"><a href="#lien-he">Đăng kí & Liên hệ</a></li>
+          <li style="--x: 3"><a href="#tour-xuan">Tour xuân 2026</a></li>
+          <li style="--x: 4"><a href="#phan-hoi">Phản hồi</a></li>
+          <li style="--x: 5"><a href="#lien-he">Đăng kí & Liên hệ</a></li>
+          <li style="--x: 6"><a href="about.html">Về chúng tôi</a></li>
+
           </ul>
         </div>
         <div class="video-container">
@@ -37,33 +38,33 @@
         <div class="header-content">
           <h1>Khám phá</h1>
           <p>Xách ba lô lên và đi thôi nào</p>
-          <form action="">
+          <form id="searchForm">
             <h1>Bạn muốn đi đâu Tết này</h1>
             <p>Địa điểm</p>
-            <select name="" id="">
-              <option value="#">--Chọn địa điểm--</option>
-              <option value="#">--HÀ NỘI--</option>
-              <option value="#">--Hồ Chí Minh--</option>
-              <option value="#">--TÂY BẮC--</option>
-              <option value="#">--PHÚ QUỐC--</option>
-              <option value="#">--NHA TRANG--</option>
-              <option value="#">--ĐÀ LẠT--</option>
-              <option value="#">--QUẢNG NINH--</option>
-              <option value="#">--HUẾ--</option>
-              <option value="#">--HÀ GIANG--</option>
-              <option value="#">--Khác (chúng tôi sẽ chủ động liên hệ)--</option>
+            <select id="locationSelect">
+              <option value="" disabled selected>--Chọn địa điểm--</option>
+              <option value="hanoi">HÀ NỘI</option>
+              <option value="hcm">Hồ Chí Minh</option>
+              <option value="taybac">TÂY BẮC</option>
+              <option value="phuquoc">PHÚ QUỐC</option>
+              <option value="nhatrang">NHA TRANG</option>
+              <option value="dalat">ĐÀ LẠT</option>
+              <option value="quangninh">QUẢNG NINH</option>
+              <option value="hue">HUẾ</option>
+              <option value="hagiang">HÀ GIANG</option>
+              <option value="other">Khác (chúng tôi sẽ chủ động liên hệ)</option>
             </select>
             <p>Số người</p>
             <input type="number" min="1" placeholder="Bạn đi bao nhiêu người" />
             <p>Ngày đi</p>
-            <input type="date" />
+            <input type="date" name="departure" />
             <p>Ngày về</p>
-            <input type="date" />
-            <button>Tìm Kiếm</button>
+            <input type="date" name="return" />
+            <button type="submit">Tìm Kiếm</button>
           </form>
         </div>
       </div>
-      </header>
+
   <!-- NICE-PLACE -->
   <section id="tour-noi-bat" class="nice-place">
     <div class="container">
@@ -147,57 +148,6 @@
         </div>
 
       </div>
-    </div>
-  </section>
-  <!-- ========================= ABOUT SECTION ========================= -->
-  <section id="ve-chung-toi" class="about">
-    <div class="container">
-      <h1 class="h1-style">About Us</h1>
-
-      <div class="about-content row">
-        <div class="about-content-left">
-          <img src="Image/cc.png" alt="" />
-        </div>
-
-        <div class="about-content-right">
-          <h2>Tại sao bạn nên chọn chúng tôi?</h2>
-
-          <p>
-            Chúng tôi không chỉ mang đến những chuyến đi, mà còn tạo ra những trải nghiệm đáng nhớ.
-          </p>
-          <p>
-            Với mạng lưới đối tác uy tín, giá cả minh bạch và dịch vụ hỗ trợ 24/7,
-            bạn hoàn toàn yên tâm khi đặt tour cùng chúng tôi.
-          </p>
-          <p>
-            Từ những điểm đến nổi tiếng đến những hành trình độc đáo ít người biết,
-            chúng tôi luôn đồng hành để biến giấc mơ khám phá của bạn thành hiện thực.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================= SERVICES SECTION ========================= -->
-  <section id="services" class="services">
-    <div class="container">
-
-      <div class="service-item">
-        <img src="Image/ht.png" alt="hotel icon">
-        <p><b>Hỗ trợ đặt phòng</b></p>
-      </div>
-
-      <div class="service-item">
-        <img src="Image/n.jpg" alt="support icon">
-        <p><b>Dịch vụ 24/7</b></p>
-      </div>
-
-      <div class="service-item">
-        <img src="Image/s.jpg" alt="guide book icon">
-        <p><b>Guide book kèm theo trong tour</b></p>
-      </div>
-
     </div>
   </section>
 
@@ -413,6 +363,7 @@
               <p><a href="faq.html">Câu hỏi thường gặp</a></p>
               <p><a href="privacy.html">Chính sách bảo mật</a></p>
               <p><a href="terms.html">Điều khoản dịch vụ</a></p>
+              <p><a href="about.html">About Us</a></p>
           </div>
 
       </div>
@@ -448,6 +399,11 @@
       <button id="closePopupContact" class="btn">Đóng</button>
     </div>
   </div>
+  <!-- zalo cham soc khach hang -->
+<a href="https://zalo.me/0366070004" class="zalo-btn" target="_blank">
+    <img src="Image/zalo.webp" alt="Zalo CSKH">
+</a>
+
       <script src="script.js"></script>
     </body>
   </html>
