@@ -284,9 +284,9 @@
     
   }
 
-  .tour-content-item-img {
-    flex: 0 0 50%;            
-    min-height: 300px;         
+    .tour-content-item-img {
+      flex: 0 0 50%;            
+      min-height: 300px;         
   }
 
 
@@ -649,14 +649,7 @@
     line-height: 1.6;
     color: #333;
   }
-  /* Card tour trắng nổi bật ở phú quốc */
-  .tour-content-item {
-      background: #ffffff; 
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.12);
-      margin-bottom: 30px;
-  }
+  /* Card tour trắng nổi bật ở phú quốc phần tour xuân */
   .tour-content-item.row {
       align-items: center;
   }
